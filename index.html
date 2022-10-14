@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  
+
+  <!-- Rating state start -->
+
+  <div class="container">
+
+    <div class="content">
+      <div class="star"><img src="./images/icon-star.svg" alt="icon-star" class="star-img"></div>
+      <div class="text">
+        <h2>How did we do?</h2>
+        <p> Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+      <div class="circles">
+        <button class="circle" id="rate-1">1</button>
+        <button class="circle" id="rate-2">2</button>
+        <button class="circle" id="rate-3">3</button>
+        <button class="circle" id="rate-4">4</button>
+        <button class="circle" id="rate-5">5</button>
+      </div>
+   <input type="submit" value="submit" id="submit" class="btn">
+    </div>
+    
+  </div>
+
+ 
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="sec-container hidden">
+
+    <div class="content rating">
+      <div class="ill-thank"><img src="./images/illustration-thank-you.svg" alt=""></div>
+      <div class="rating-circle">You Selected <span id="rating">5</span> out of 5</div>
+      <div class="rating-text">
+        <h2>Thank You!</h2>
+        <p> We appreciate you taking your time to give rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
+
+      <input type="submit" value="Back" id="back" class="btn">
+    
+    </div>
+    
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Opcode</a>.
+  </div>
+  <script src="index.js"></script>
+  
+</body>
+</html>
