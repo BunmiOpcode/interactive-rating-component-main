@@ -8,19 +8,20 @@ const rating = document.getElementById('rating');
 const rates = document.querySelectorAll('.circle');
 
 
-function showSecCont(){
+function showSecContainer(){
     secContainer.classList.remove('hidden');
     container.style.display = "none";
 }
 
-submitBtn.addEventListener('click',  showSecCont)
+submitBtn.addEventListener('click',  showSecContainer)
 
-function  showCont(){
+function  showContainer(){
     secContainer.classList.add('hidden');
     container.style.display = "flex";
+    window.location.reload();
 }
 
-back.addEventListener('click', showCont)
+back.addEventListener('click', showContainer)
 
 
 rates.forEach((rate) =>{
